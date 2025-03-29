@@ -1,0 +1,277 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Rubik", sans-serif;
+}
+.content{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #f5f5f5;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    height: 4em;
+    width: 100%;
+    background-color: #ffffff;
+    box-sizing: border-box;
+    justify-content: space-between;
+    box-shadow: 1em 0em 1em 0.3em #d6d6d6;
+    padding: 0 2em;
+    z-index: 1;
+}
+#brand-logo{
+    height: 3em;
+    width: 0 auto;
+    margin: 0 0 0 0;
+
+}
+.branding{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    width: 30%;
+    flex-shrink: 1;
+    font-family: "Rubik", sans-serif;
+}
+.createAccount{
+    display: flex;
+    background-color: #ffffff;
+    width: 50%;
+    justify-content: flex-end;
+    box-sizing: border-box;
+    padding: 2em;
+}
+.createAccount button{
+    width: 5em;
+    height:2.4em;
+    justify-self: center;
+    align-self: center;
+    margin: 0 1em;
+    transition: all 0.2s ease-in-out;
+}
+#signButton{
+    border-radius: 10px;
+    background-color: #f4544c;
+    border: 1px solid #f4544c;
+    color: white;
+}
+#signButton:hover{
+    height: 2.9em;
+    width: 5.2em;
+    background-color: #f4544cbb;
+
+}
+#loginButton{
+    background-color: transparent;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+#loginButton:hover{
+    height: 2.9em;
+    width: 5.2em;
+    background-color: rgb(203, 203, 203);
+}
+.mainContent{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    background-color: #f4f4f4;
+    box-sizing: border-box;
+    padding: 1em;
+
+}
+.locationSection{
+    height: 100%;
+    width: 70%;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.locationSection h1{
+  font-size: 2.5em;
+  margin: 1em 1em;
+  letter-spacing: 1.5px;
+  z-index: 1;
+}
+.searchLocation{
+    display: flex;
+    flex-direction: row;
+    background-color: #ffffff;
+    width: 80%;
+    height: 20%;
+    align-items: center;
+    border-radius: 15px;
+    box-shadow: 20px 20px 60px #bebebe;
+
+}
+
+.searchLocation input{
+  width: 80%;
+  height:50%;
+  margin: 0 1em;
+  border-radius: 10px;
+  outline: none;
+  border: 1px solid black;
+  padding: 0em 1.3em;
+}
+
+.searchLocation button{
+   height: 40%;
+   width: 25%;
+   margin: 0em 1em;
+   border-radius: 10px;
+   border: transparent;
+   color: white;
+   background-color: #f4544c;
+   transition: all 0.4s ease-in-out;
+}
+.searchLocation button:hover{
+    height: 45%;
+    width: 28%;
+}
+#deliveryImage{ 
+  position: absolute;
+  width: 33%;
+  height: 0 auto;
+  right: 0;
+  bottom: 0;
+}
+#design-1{
+    color: #f4544c;
+}
+.mainMenu{
+    display: none;
+    background-color: #ffffff;
+    align-items: center;
+}
+
+
+@media screen and (max-width: 750px){
+    #signButton{
+        display: none;
+        border-radius: 10px;
+        background-color: #f4544c;
+        border: 1px solid #f4544c;
+        color: white;
+    }
+
+    #loginButton{
+        display: none;
+        background-color: transparent;
+        border-radius: 10px;
+        border: 1px solid black;
+    }
+    header{
+        display: flex;
+        flex-direction: row;
+        height: 4em;
+        width: 100%;
+        background-color: #ffffff;
+        box-sizing: border-box;
+        justify-content: center;
+        box-shadow: 1em 0em 1em 0.3em #d6d6d6;
+        padding: 0 0.5em;
+        z-index: 1;
+    }
+    .createAccount{
+        display: flex;
+        background-color: transparent;
+        width: 10%;
+        justify-self: flex-end;
+        align-self: flex-end;
+        box-sizing: border-box;
+        margin-left: auto;
+        margin-right: 0;
+    }
+
+    .branding{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #ffffff;
+        width: 30%;
+        flex-shrink: 1;
+        font-family: "Rubik", sans-serif;
+        margin-left: auto;
+    }
+
+    .locationSection{
+        height: 100%;
+        width: 100%;
+        background-color: #f4f4f4;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .searchLocation{
+        display: flex;
+        flex-direction: column;
+        background-color: transparent;
+        width: 90%;
+        height: 15%;
+        align-items: center;
+        border-radius: 15px;
+        box-sizing: border-box;
+        padding: 1em 0;
+        border: 1px solid black;
+        z-index: 1;
+        min-height: 150px;
+    
+    }
+
+    .searchLocation input{
+        width: 80%;
+        height:100%;
+        margin: 1em 1em;
+        border-radius: 5px;
+        outline: none;
+        border: 1px solid black;
+ 
+      }
+
+      .searchLocation button{
+        height: 70%;
+        width: 86%;
+        margin: 0em 1em;
+        border-radius: 5px;
+        border: transparent;
+        color: white;
+        background-color: #f4544c;
+        transition: all 0.4s ease-in-out;
+     }
+
+     #deliveryImage{ 
+        position: absolute;
+        width:55%;
+        height: 0 auto;
+        z-index: 0;
+
+      }
+
+      .mainMenu{
+        display: flex;
+        background-color: transparent;
+        align-items: center;
+        justify-content: center;
+        width: 4em;
+    }
+    .navButton{
+        height: 50%;
+        width: 50%;
+        background-color: transparent;
+        outline: none;
+        border: none;
+    }
+    .navButton-img{
+      width: 100%;    
+    }
+
+}
