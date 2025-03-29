@@ -152,7 +152,7 @@ header{
 }
 
 
-@media screen and (max-width: 750px){
+@media screen and (max-width: 900px){
     #signButton{
         display: none;
         border-radius: 10px;
@@ -195,7 +195,7 @@ header{
         justify-content: center;
         align-items: center;
         background-color: #ffffff;
-        width: 30%;
+        width: 45%;
         flex-shrink: 1;
         font-family: "Rubik", sans-serif;
         margin-left: auto;
@@ -250,7 +250,7 @@ header{
 
      #deliveryImage{ 
         position: absolute;
-        width:55%;
+        width:65%;
         height: 0 auto;
         z-index: 0;
 
