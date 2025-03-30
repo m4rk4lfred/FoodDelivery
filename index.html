@@ -14,6 +14,8 @@
 <body>
 
     <div class="content">
+
+
         <header>
             <section class="mainMenu">
                 <button class="navButton"><img class="navButton-img" src="menu (1).png" alt="button"></button>
@@ -44,6 +46,36 @@
         </div>
 
     </div>
+
+    <dialog class="modal-dialog">
+        
+        <div class="signup-modal">
+            <button class="closeModal-signup">x</button>
+            <section class="signup-header">
+                <h1><span id="design-1">S</span>ign up</h1>
+                <img src="delivery-bike.png" alt="delivery-bike.jpg" class="signup-deliveryLogo">
+            </section>
+ 
+
+
+            <section class="credentialsInput">
+                <form action="">
+                    <label for="email-input">Email</label>
+                    <input type="email" name="email-input" required maxlength="55">
+                    <label for="username-input">Username</label>
+                    <input type="text" name="username-input" required maxlength="55">
+                    <label for="password-input">Password</label>
+                    <input type="password" name="password-input" required maxlength="55">
+                  
+                    <div class="submitSection-signup">
+                        <input type="submit" id="submit-credentials">
+                    </div>
+                  
+                </form>
+            </section>
+        </div>
+    </dialog>
     
+    <script src="landing.js"></script>
 </body>
 </html>

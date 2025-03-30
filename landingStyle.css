@@ -28,6 +28,7 @@ header{
     margin: 0 0 0 0;
 
 }
+
 .branding{
     display: flex;
     justify-content: center;
@@ -107,7 +108,7 @@ header{
     height: 20%;
     align-items: center;
     border-radius: 15px;
-    box-shadow: 20px 20px 60px #bebebe;
+    box-shadow: 0px 10px 60px #abaaaa;
 
 }
 
@@ -119,6 +120,10 @@ header{
   outline: none;
   border: 1px solid black;
   padding: 0em 1.3em;
+  transition: border 0.5s ease-in-out;
+}
+.searchLocation input:focus{
+  border: 1px solid #f4544c;
 }
 
 .searchLocation button{
@@ -151,6 +156,140 @@ header{
     align-items: center;
 }
 
+.modal-dialog {
+    visibility: hidden;
+   width: 100vw; 
+    height: 100vh; 
+    background-color: rgba(0, 0, 0, 0.2); 
+    z-index: 9999; 
+    position: fixed; 
+    top: 0;
+    left: 0;
+
+    display: none; 
+    transition: all 0.2s ease-in-out;
+    justify-content: center; 
+    align-items: center; 
+    opacity: 0;
+}
+.signup-modal{
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    z-index: 999;
+    justify-self: center;
+    align-self: center;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    top: 0;
+    width: 30%;
+    height: 70%;
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid #f4544c;
+    min-width: 350px;
+    padding: 1em;
+    box-sizing: border-box;
+    
+}
+.signup-header{
+    display: flex;
+    background-color: transparent;
+    width: 100%;
+    height: 17%;
+    align-items: flex-end;
+    padding: 0 1em;
+    box-sizing: border-box;
+    flex-direction: row;
+    font-size: 1.5em;
+}
+.credentialsInput{
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 1em;
+    color: #f4544c;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.credentialsInput input{
+    width: 100%;
+    height: 3em;
+    margin: 10px 0;
+    border-radius: 10px;
+    outline: none;
+    padding: 0 5px ;
+    border: 1px solid #f4544c;
+    transition: all 0.5s ease-in-out;
+}
+
+.credentialsInput input:focus{
+    border: none;
+    border-radius: 0px;
+    border-bottom: 1px solid #f4544c;
+    animation: blink 1.6s infinite ease-in-out;
+}
+@keyframes blink {
+    0% {
+        border-bottom: 1.5px solid #f4544c;
+    }
+    50% {
+        border-bottom: 1.5px solid transparent; /* Intermediate step for smooth transition */
+    }
+    100% {
+        border-bottom: 1.5px solid #f4544c;
+    }
+}
+
+#submit-credentials{
+    width: 40%;
+    height: 80%;
+    outline: none;
+    background-color: #f4544c;
+    color: white;
+    border: none;
+    transition: background-color 0.2s ease-in-out;
+
+}
+#submit-credentials:hover{
+   background-color: transparent;
+   color:#f4544c;
+   border: 1px solid #f4544c;
+}
+.submitSection-signup{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3em;
+    background-color: transparent;
+
+}
+.signup-deliveryLogo{
+    position: absolute;
+    width: 20%;
+    top:5%;
+    left:180px;
+}
+.closeModal-signup{
+    width: 1.5em;
+    height: auto;
+    font-size: 1em;
+    align-self: flex-end;
+    border: 1px solid #f4544c;
+    outline: none;
+    color: #f4544c;
+    background-color: transparent;
+    transition: all 0.2s ease-in-out;
+}
+.closeModal-signup:hover{
+    color: white;
+    background-color: #f4544c;
+}
 
 @media screen and (max-width: 900px){
     #signButton{
@@ -199,6 +338,8 @@ header{
         flex-shrink: 1;
         font-family: "Rubik", sans-serif;
         margin-left: auto;
+        min-width: 200px;
+        
     }
 
     .locationSection{
@@ -234,7 +375,11 @@ header{
         border-radius: 5px;
         outline: none;
         border: 1px solid black;
- 
+        transition: border 1s ease-in-out;
+      }
+
+      .searchLocation input:focus{
+        border: 5px solid #f4544c;
       }
 
       .searchLocation button{
@@ -262,6 +407,7 @@ header{
         align-items: center;
         justify-content: center;
         width: 4em;
+        min-width: 50px;
     }
     .navButton{
         height: 50%;
@@ -272,6 +418,13 @@ header{
     }
     .navButton-img{
       width: 100%;    
+    }
+
+    .signup-deliveryLogo{
+        position: absolute;
+        width: 20%;
+        top:45px;
+        left:180px;
     }
 
 }
