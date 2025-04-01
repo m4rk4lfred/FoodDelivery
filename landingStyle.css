@@ -137,8 +137,9 @@ header{
    transition: all 0.4s ease-in-out;
 }
 #signupButton-2:hover{
-    height: 45%;
-    width: 28%;
+    background-color: transparent;
+    color: #f4544c;
+    border: 1px solid #f4544c;
 }
 #deliveryImage{ 
   position: absolute;
@@ -392,6 +393,21 @@ header{
         background-color: #f4544c;
         transition: all 0.4s ease-in-out;
      }
+     #signupButton-2{
+        height: 70%;
+        width: 86%;
+        margin: 0em 1em;
+        border-radius: 5px;
+        border: transparent;
+        color: white;
+        background-color: #f4544c;
+        transition: all 0.4s ease-in-out;
+     }
+     #signupButton-2:hover{
+        background-color: transparent;
+        color: #f4544c;
+        border: 1px solid #f4544c;
+     }
 
      #deliveryImage{ 
         position: absolute;
@@ -427,20 +443,6 @@ header{
         left:180px;
     }
 
-    .modal-dialog {
-        visibility: hidden;
-        width: 100vw; 
-        height: 100vh; 
-        background-color: rgba(0, 0, 0, 0.2); 
-        z-index: 9999; 
-        position: fixed; 
-        top: 0;
-        left: 0;
-        display: none; 
-        transition: all 0.2s ease-in-out;
-        justify-content: center; 
-        align-items: center; 
-        opacity: 0;
-    }
+
 
 }
