@@ -1,7 +1,7 @@
-function showloginModal() {
+function showloginModal(buttonName) {
     let modal = document.querySelector('.loginDialog');
     let close = document.querySelector('.loginClose');
-    let loginButton = document.getElementById('loginButton');
+    let loginButton = document.getElementById(buttonName);
 
     // Open the modal when the signup button is clicked
     loginButton.addEventListener('click', function () {
