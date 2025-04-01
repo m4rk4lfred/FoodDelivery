@@ -176,7 +176,7 @@ header{
 }
 .modal-box{
     display: flex;
-    position: absolute;
+    position: fixed;
     flex-direction: column;
     z-index: 999;
     justify-self: center;
@@ -444,27 +444,7 @@ header{
         left:180px;
     }
 
-    
-    .modal-box{
-        display: flex;
-        position: absolute;
-        flex-direction: column;
-        z-index: 999;
-        justify-self: center;
-        align-self: center;
-        bottom: 0;
-        right: 0;
-        left: 0;
-        top: 0;
-        width: 30%;
-        height: 70%;
-        background-color: white;
-        border-radius: 10px;
-        border: 1px solid #f4544c;
-        min-width: 350px;
-        margin: auto;
-        box-sizing: border-box;
-        
+
 
 
 }
