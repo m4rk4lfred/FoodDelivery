@@ -177,10 +177,6 @@ header{
     z-index: 999;
     justify-self: center;
     align-self: center;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    top: 0;
     width: 30%;
     height: 70%;
     background-color: white;
