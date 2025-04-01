@@ -164,6 +164,10 @@ header{
     background-color: rgba(0, 0, 0, 0.2); 
     z-index: 9999; 
     position: fixed; 
+    bottom: 0;
+    right: 0;
+    left: 0;
+    top: 0;
     display: none; 
     transition: all 0.2s ease-in-out;
     justify-content: center; 
@@ -177,6 +181,10 @@ header{
     z-index: 999;
     justify-self: center;
     align-self: center;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    top: 0;
     width: 30%;
     height: 70%;
     background-color: white;
