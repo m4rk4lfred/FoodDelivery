@@ -181,10 +181,6 @@ header{
     z-index: 999;
     justify-self: center;
     align-self: center;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    top: 0;
     width: 30%;
     height: 70%;
     background-color: white;
@@ -193,6 +189,9 @@ header{
     min-width: 350px;
     padding: 1em;
     box-sizing: border-box;
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust for centering */
     
 }
 .boxHeader{
