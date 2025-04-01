@@ -126,7 +126,7 @@ header{
   border: 1px solid #f4544c;
 }
 
-.searchLocation button{
+#signupButton-2{
    height: 40%;
    width: 25%;
    margin: 0em 1em;
@@ -136,7 +136,7 @@ header{
    background-color: #f4544c;
    transition: all 0.4s ease-in-out;
 }
-.searchLocation button:hover{
+#signupButton-2:hover{
     height: 45%;
     width: 28%;
 }
@@ -172,7 +172,7 @@ header{
     align-items: center; 
     opacity: 0;
 }
-.signup-modal{
+.modal-box{
     display: flex;
     position: absolute;
     flex-direction: column;
@@ -193,7 +193,7 @@ header{
     box-sizing: border-box;
     
 }
-.signup-header{
+.boxHeader{
     display: flex;
     background-color: transparent;
     width: 100%;
@@ -261,7 +261,7 @@ header{
    color:#f4544c;
    border: 1px solid #f4544c;
 }
-.submitSection-signup{
+.submitSection{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -275,7 +275,7 @@ header{
     top:5%;
     left:180px;
 }
-.closeModal-signup{
+.closeModal{
     width: 1.5em;
     height: auto;
     font-size: 1em;
@@ -286,7 +286,7 @@ header{
     background-color: transparent;
     transition: all 0.2s ease-in-out;
 }
-.closeModal-signup:hover{
+.closeModal:hover{
     color: white;
     background-color: #f4544c;
 }
@@ -382,7 +382,7 @@ header{
         border: 5px solid #f4544c;
       }
 
-      .searchLocation button{
+      #signupButton-2{
         height: 70%;
         width: 86%;
         margin: 0em 1em;

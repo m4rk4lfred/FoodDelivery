@@ -15,7 +15,7 @@
 
     <div class="content">
 
-
+       <!-- This the location of the header -->
         <header>
             <section class="mainMenu">
                 <button class="navButton"><img class="navButton-img" src="menu (1).png" alt="button"></button>
@@ -30,12 +30,14 @@
            </section>
         </header>
 
+
+        <!-- This the location of the main content -->
         <div class="mainContent">
             <section class="locationSection">
               <h1> <span id="design-1">Enjoy</span> discounts on your first order</h1>
               <div class="searchLocation">
                 <input type="text" placeholder="Enter your email">
-                <button>Sign up for Food Tiger</button>
+                <button id="signupButton-2" onclick="showsignupModal(this.id)">Sign up for Food Tiger</button>
               </div>
               
               
@@ -47,11 +49,13 @@
 
     </div>
 
-    <dialog class="modal-dialog">
+
+     <!-- This is the modal for sign up-->
+    <dialog class="modal-dialog signupDialog">
         
-        <div class="signup-modal">
-            <button class="closeModal-signup">x</button>
-            <section class="signup-header">
+        <div class="signup-modal modal-box">
+            <button class="closeModal signupClose">x</button>
+            <section class="signup-header boxHeader">
                 <h1><span id="design-1">S</span>ign up</h1>
                 <img src="delivery-bike.png" alt="delivery-bike.jpg" class="signup-deliveryLogo">
             </section>
@@ -67,7 +71,7 @@
                     <label for="password-input">Password</label>
                     <input type="password" name="password-input" required maxlength="55">
                   
-                    <div class="submitSection-signup">
+                    <div class="submitSection-signup submitSection">
                         <input type="submit" id="submit-credentials">
                     </div>
                   
@@ -75,6 +79,37 @@
             </section>
         </div>
     </dialog>
+
+
+    <!-- This is the modal for login up-->
+    <dialog class="modal-dialog loginDialog">
+        
+        <div class="login-modal modal-box">
+            <button class="closeModal loginClose">x</button>
+            <section class="login-header boxHeader">
+                <h1><span id="design-1">L</span>ogin</h1>
+                <img src="delivery-bike.png" alt="delivery-bike.jpg" class="signup-deliveryLogo">
+            </section>
+ 
+
+
+            <section class="credentialsInput">
+                <form action="">
+                    <label for="email-input">Email</label>
+                    <input type="email" name="email-input" required maxlength="55">
+                    <label for="password-input">Password</label>
+                    <input type="password" name="password-input" required maxlength="55">
+                  
+                    <div class="submitSection-signup submitSection">
+                        <input type="submit" id="submit-credentials">
+                    </div>
+                  
+                </form>
+            </section>
+        </div>
+    </dialog>
+
+   
     
     <script src="landing.js"></script>
 </body>
