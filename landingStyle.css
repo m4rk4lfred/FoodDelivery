@@ -164,9 +164,6 @@ header{
     background-color: rgba(0, 0, 0, 0.2); 
     z-index: 9999; 
     position: fixed; 
-    top: 0;
-    left: 0;
-
     display: none; 
     transition: all 0.2s ease-in-out;
     justify-content: center; 
