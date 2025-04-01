@@ -443,7 +443,7 @@ header{
 
 
     .modal-box {
-        width: 90%; /* Adjust width for smaller screens */
+       
         max-width: 300px; /* Limit the maximum width */
         padding: 1em; /* Adjust padding for smaller screens */
     }
